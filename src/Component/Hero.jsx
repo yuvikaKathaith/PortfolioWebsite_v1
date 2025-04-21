@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import {Link} from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -49,17 +50,19 @@ const Hero = () => {
           technologies. I also enjoy solving DSA problems and improving my
           logic.
         </motion.p>
-        <motion.a href=""
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 2.0, duration: 2.0 }}
         >
-          <span className="font-inter font-semibold text-[#64ffda] inline-flex relative cursor-pointer h-7 group overflow-x-hidden">
-            Learn more.
-            <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
-          </span>
-        </motion.a>
+          <Link to='about' smooth={true} duration={500}>
+            <span className="font-inter font-semibold text-[#64ffda] inline-flex relative cursor-pointer h-7 group overflow-x-hidden">
+              Learn more.
+              <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+            </span>
+          </Link>
+        </motion.p>
 
         <div className="mt-10">
           <motion.a
@@ -67,8 +70,9 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 2.0, duration: 2.0 }}
-            href="mailto:yuvikakathaith03@email.com"
-            className="inline-block border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded-sm hover:bg-[#64ffda22] transition duration-300 font-mono"
+            href="https://www.linkedin.com/in/yuvika-kathaith-21661b258/"
+            target="_blank"
+            className="inline-block border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded-sm hover:bg-[#64ffda22] transition-transform hover:-translate-y-1 duration-300 font-mono"
           >
             Get In Touch
           </motion.a>

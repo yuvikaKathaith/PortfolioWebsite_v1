@@ -2,10 +2,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   return (
     <>
+      <Element name='work'>
       <section className="py-30 px-10 flex justify-center items-center flex-col">
         <motion.div
           className="flex flex-row w-3/5"
@@ -267,6 +269,7 @@ const Projects = () => {
           </div>
         </motion.div>
       </section>
+      </Element>
     </>
   );
 };

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const handleLogoClick = () => {
-    window.open('https://github.com/yuvikaKathaith/PortfolioWebsite_v1', '_blank')
+    <Link href=''></Link>
   }
-  
+
   return (
     <>
       <nav className="flex justify-between font-mono cursor-pointer sticky top-0 h-22 bg-[#0a192f]/70 backdrop-blur-md z-50">
@@ -15,7 +16,8 @@ const Navbar = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="p-7 ml-5"
+          whileHover={{y:-4}}
+          className="p-7 pl-12"
         >
           <Image src="/logo.png" alt="logo" height={43} width={43} />
         </motion.div>
@@ -29,9 +31,9 @@ const Navbar = () => {
               transition={{ delay:0.1, duration: 0.3 }}
               className="flex flex-row gap-1 hover:text-[#64ffda]"
             >
-              <li>
-                <span className="text-[#64ffda]">01.</span> About
-              </li>
+              <Link to="about" smooth={true} duration={500}>
+                  <span className="text-[#64ffda]">01.</span> About
+              </Link>
             </motion.div>
 
             <motion.div
@@ -40,9 +42,9 @@ const Navbar = () => {
               transition={{ delay: 0.25, duration: 0.3 }}
               className="flex flex-row gap-1 hover:text-[#64ffda]"
             >
-              <li>
-                <span className="text-[#64ffda]">02.</span> Experience
-              </li>
+              <Link to="experience" smooth={true} duration={500}>
+                  <span className="text-[#64ffda]">02.</span> Experience
+              </Link>
             </motion.div>
 
             <motion.div
@@ -51,9 +53,9 @@ const Navbar = () => {
               transition={{ delay: 0.35, duration: 0.3 }}
               className="flex flex-row gap-1 hover:text-[#64ffda]"
             >
-              <li>
-                <span className="text-[#64ffda]">03.</span> Work
-              </li>
+              <Link to="work" smooth={true} duration={500}>
+                  <span className="text-[#64ffda]">03.</span> Work
+              </Link>
             </motion.div>
 
             <motion.div
@@ -62,9 +64,9 @@ const Navbar = () => {
               transition={{ delay: 0.45, duration: 0.3 }}
               className="flex flex-row gap-1 hover:text-[#64ffda]"
             >
-              <li>
-                <span className="text-[#64ffda]">04.</span> Contact
-              </li>
+              <Link to="contact" smooth={true} duration={500}>
+                  <span className="text-[#64ffda]">04.</span> Contact
+              </Link>
             </motion.div>
 
             <motion.div
@@ -72,7 +74,7 @@ const Navbar = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.3 }}
             >
-              <button className="border w-20 h-10 rounded-sm text-[#64ffda] -mt-5 hover:bg-[#64ffda]/10">
+              <button className="transition-transform hover:-translate-y-1 duration-300 border w-20 h-10 rounded-sm text-[#64ffda] -mt-5 hover:bg-[#64ffda]/10">
                 Resume
               </button>
             </motion.div>

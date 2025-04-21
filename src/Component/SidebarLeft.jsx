@@ -14,13 +14,13 @@ const SidebarLeft = () => {
       className="bottom-0 fixed z-50 pl-2">
         <div className="p-10">
           {socialLinks.map((social) => (
-            <Link key={social.id} href={social.url}>
+            <Link key={social.id} href={social.url} target="_blank">
               <Image
                 src={social.icon}
                 alt="social"
                 width={23}
                 height={23}
-                className="mb-7"
+                className="mb-7 hover:-translate-y-1 transition-transform duration-300"
               />
             </Link>
           ))}

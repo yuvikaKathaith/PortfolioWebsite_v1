@@ -4,8 +4,11 @@ import Link from "next/link";
 import { projectsData } from "@/utils/otherProjects.js";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const OtherProjects = () => {
+  const router = useRouter();
+  
   const [showAllProjects, setShowAllProjects] = useState(false);
   const projectsToShow = showAllProjects
     ? projectsData
@@ -33,13 +36,13 @@ const OtherProjects = () => {
           viewport={{ once: true }}
           className="overflow-x-hidden"
         >
-          <Link
-            href="#"
+          <div
+            onClick={() => router.push("/archive")}
             className="relative text-[#64ffda] font-mono cursor-pointer group"
           >
             view the archive
             <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
-          </Link>
+          </div>
         </motion.div>
       </motion.div>
 
@@ -51,7 +54,7 @@ const OtherProjects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3 * index,
+              delay: showAllProjects? 0.1*index : 0.3 * index,
               duration: 0.5,
             }}
             viewport={{ once: true }}
@@ -118,6 +121,7 @@ const OtherProjects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.5 }}
+          whileHover={{y:-2}}
           className="w-33 h-13 bg-transparent border border-[#64ffda] text-[#64ffda] rounded-sm text-sm font-mono hover:bg-[#64ffda]/10"
           onClick={() => {
             setShowAllProjects(!showAllProjects);
