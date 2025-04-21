@@ -10,8 +10,9 @@ const Projects = () => {
         <motion.div
           className="flex flex-row w-3/5"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 0.5 }}
         >
           {/* Header */}
           <div className="flex items-center">
@@ -28,8 +29,9 @@ const Projects = () => {
         {/* first project */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.3 }}
           className="flex flex-row p-15"
         >
           <div className="w-[700px] h-[370px] relative z-10 group">
@@ -111,8 +113,9 @@ const Projects = () => {
         {/* second project */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 0.3 }}
           className="flex flex-row p-15"
         >
           <div className="z-20 -mr-18 -mt-4">
@@ -189,8 +192,9 @@ const Projects = () => {
         {/* third project */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.8, duration: 0.3 }}
           className="flex flex-row p-15"
         >
           <div className="w-[650px] h-[320px] relative z-10 group">

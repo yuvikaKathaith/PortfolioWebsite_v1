@@ -12,8 +12,9 @@ const Experience = () => {
         <motion.div
           className="flex flex-row w-3/5"
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.5 }}
         >
           {/* Header */}
           <div className="flex items-center">
@@ -30,8 +31,9 @@ const Experience = () => {
         <motion.div 
             className="gap-10 flex flex-rowp-10 w-3/5 pt-10 text-justify"
             initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.0, duration: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 1.0 }}
         >
             <div className="flex flex-col">
                 {experienceData.map((item) => 
@@ -54,8 +56,9 @@ const Experience = () => {
                 experience === item.id && (
                     <motion.div 
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.8, duration: 1.0 }}
                         key={item.id} 
                         className="flex flex-col gap-3 text-[#ccd6f6]"
                     >

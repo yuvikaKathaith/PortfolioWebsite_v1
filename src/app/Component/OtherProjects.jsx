@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "@/utils/otherProjects.js";
@@ -6,29 +6,55 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const OtherProjects = () => {
-  const [showAllProjects, setShowAllProjects] = useState(false)
-  const projectsToShow = showAllProjects ? projectsData : projectsData.slice(0, 6);
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const projectsToShow = showAllProjects
+    ? projectsData
+    : projectsData.slice(0, 6);
+
   return (
     <div className="flex flex-col">
       {/* Other project heading */}
-      <div className="p-10 flex flex-col justify-center items-center gap-3">
-        <h1 className="text-[#ccd6f6] text-[28px] font-semibold font-inter">
-          Other Noteworthy Projects
-        </h1>
-        <Link
-          href="#"
-          className="relative text-[#64ffda] font-mono cursor-pointer group overflow-x-hidden"
+      <motion.div
+        className="p-10 flex flex-col justify-center items-center gap-3"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.2 }}
+        viewport={{ once: true }}
+      >
+        <motion.h1
+          className="text-[#ccd6f6] text-[28px] font-semibold font-inter"
         >
-          view the archive
-          <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
-        </Link>
-      </div>
+          Other Noteworthy Projects
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
+          viewport={{ once: true }}
+          className="overflow-x-hidden"
+        >
+          <Link
+            href="#"
+            className="relative text-[#64ffda] font-mono cursor-pointer group"
+          >
+            view the archive
+            <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+          </Link>
+        </motion.div>
+      </motion.div>
+
       {/* outer div contains all cards */}
       <motion.div className="grid grid-cols-3 gap-4 mx-auto">
-        {projectsToShow.map((project) => (
-          // Project card
-          <div
+        {projectsToShow.map((project, index) => (
+          <motion.div
             key={project?.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3 * index,
+              duration: 0.5,
+            }}
+            viewport={{ once: true }}
             onClick={() => window.open(project?.live, "_blank")}
           >
             <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 w-full max-w-[323px] h-[330px] cursor-pointer">
@@ -82,19 +108,23 @@ const OtherProjects = () => {
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
+
       <div className="flex justify-center items-center p-10">
-        <button 
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="w-33 h-13 bg-transparent border border-[#64ffda] text-[#64ffda] rounded-sm text-sm font-mono hover:bg-[#64ffda]/10"
           onClick={() => {
-            setShowAllProjects(!showAllProjects)
+            setShowAllProjects(!showAllProjects);
           }}
-          value={showAllProjects}
         >
           {showAllProjects ? "Show Less" : "Show More"}
-        </button>
+        </motion.button>
       </div>
     </div>
   );

@@ -10,8 +10,9 @@ const About = () => {
       <motion.div
         className="w-3/5"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.0, duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.5 }}
       >
         <div className="flex items-center py-10">
           <h2 className="text-[#ccd6f6] text-[28px] font-semibold mr-4">
@@ -124,8 +125,9 @@ const About = () => {
       <motion.div
         className="w-1/3 relative group mt-30"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 1.0, duration: 1.0 }}
       >
         {/* Outer Frame Border that shifts on hover */}
         <div className="absolute inset-0 top-4 left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 z-10 w-[300px] h-[300px]" />
