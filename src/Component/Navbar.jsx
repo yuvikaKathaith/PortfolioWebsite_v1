@@ -1,11 +1,21 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+
   const handleLogoClick = () => {
-    <Link href=''></Link>
-  }
+    if (pathname === "/") {
+      // Try to scroll to top
+      scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // Not on homepage → go to homepage
+      router.push("/");
+    }
+  };
 
   return (
     <>

@@ -15,7 +15,7 @@ const ArchivePage = () => {
       <SidebarLeft />
       <SidebarRight />
 
-      <div className="text-[#ccd6f6] font-inter max-w-[1000px] mx-auto">
+      <div className="text-[#ccd6f6] font-inter max-w-[1000px] mx-auto pb-10">
         {/* Heading */}
         <div className="mb-10">
           <motion.h1 
