@@ -19,7 +19,7 @@ export const metadata = {
   title: "Yuvika Kathaith",
   description: "Portfolio",
   icons: {
-    icon: "/logo-.png", 
+    icon: "/logo-blue-bg.png", 
   },
 };
 
