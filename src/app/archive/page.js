@@ -34,7 +34,7 @@ const ArchivePage = () => {
             viewport={{ once: true }}
             className="text-[#6cffda] font-mono text-md"
           >
-            A list of things I’ve worked on
+            A big list of things I’ve worked on
           </motion.p>
         </div>
 

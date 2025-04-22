@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import {Link, Element} from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -64,19 +64,21 @@ const Hero = () => {
           </Link>
         </motion.p>
 
-        <div className="mt-10">
-          <motion.a
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 2.0, duration: 2.0 }}
-            href="https://www.linkedin.com/in/yuvika-kathaith-21661b258/"
-            target="_blank"
-            className="inline-block border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded-sm hover:bg-[#64ffda22] transition-transform hover:-translate-y-1 duration-300 font-mono"
-          >
-            Get In Touch
-          </motion.a>
-        </div>
+        
+          <div className="mt-10">
+            <Link to='contact' smooth={true} duration={500}>
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.0, duration: 2.0 }}
+                target="_blank"
+                className="inline-block border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded-sm hover:bg-[#64ffda22] transition-transform hover:-translate-y-1 duration-300 font-mono"
+              >
+                Get In Touch
+              </motion.button>
+            </Link>
+          </div>
       </div>
     </section>
   );

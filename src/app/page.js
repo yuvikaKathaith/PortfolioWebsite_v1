@@ -9,6 +9,7 @@ import Contact from "@/Component/Contact";
 import Footer from "@/Component/Footer";
 import SidebarLeft from "@/Component/SidebarLeft";
 import SidebarRight from "@/Component/SidebarRight";
+import Head from "next/head";
 
 export default function Home() {
   return (
