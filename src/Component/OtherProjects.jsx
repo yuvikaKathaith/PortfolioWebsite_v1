@@ -25,7 +25,7 @@ const OtherProjects = () => {
         viewport={{ once: true }}
       >
         <motion.h1
-          className="text-[#ccd6f6] text-[28px] font-semibold font-inter"
+          className="text-[#ccd6f6] text-[20px] md:text-2xl font-semibold font-inter"
         >
           Other Noteworthy Projects
         </motion.h1>
@@ -47,7 +47,7 @@ const OtherProjects = () => {
       </motion.div>
 
       {/* outer div contains all cards */}
-      <motion.div className="grid md:grid-cols-3 grid-cols-2 gap-4 mx-auto">
+      <motion.div className="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto md:p-0 p-10">
         {projectsToShow.map((project, index) => (
           <motion.div
             key={project?.id}
@@ -60,7 +60,7 @@ const OtherProjects = () => {
             viewport={{ once: true }}
             onClick={() => window.open(project?.live, "_blank")}
           >
-            <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 md:max-w-[323px] md:h-[330px] max-w-[250px] h-[420px] cursor-pointer">
+            <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 md:max-w-[323px] md:h-[330px] cursor-pointer">
               <div className="flex items-center justify-between mb-5">
                 {/* folder icon */}
                 <Image src="/folder.svg" width={45} height={45} alt="folder" />

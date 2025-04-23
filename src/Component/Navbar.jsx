@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Ensure you have lucide-react installed
+import { Menu, X } from "lucide-react"; 
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -34,7 +34,7 @@ const Navbar = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           whileHover={{ y: -4 }}
-          className="p-7 pl-12"
+          className="md:p-7 p-5 pl-6 md:pl-12"
         >
           <Image src="/logo.png" alt="logo" height={43} width={43} />
         </motion.div>

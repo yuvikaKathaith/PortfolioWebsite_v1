@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <>
       <Element name="experience">
-        <section className="py-30 px-25 md:px-10 flex justify-center items-center flex-col">
+        <section className="py-10 px-10 md:px-10 flex justify-center items-center flex-col">
           <motion.div
             className="flex flex-col sm:flex-row w-full md:w-4/5 lg:w-3/5"
             initial={{ opacity: 0, y: -20 }}
@@ -19,8 +19,8 @@ const Experience = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             <div className="flex items-center mb-6 sm:mb-0">
-              <h1 className="text-[#ccd6f6] text-[24px] md:text-[27px] font-semibold mr-4">
-                <span className="mr-2 font-normal font-mono text-2xl md:text-2xl text-[#64ffda]">
+              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] font-semibold mr-4">
+                <span className="mr-2 font-normal font-mono text-[18px] md:text-2xl text-[#64ffda]">
                   02.
                 </span>
                 Where I've Worked
