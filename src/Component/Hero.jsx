@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="flex items-center justify-center px-8 bg-[#0a192f] text-white md:pl-50">
       <div className="flex flex-col lg:flex-row items-start justify-start max-w-screen-xl mx-auto py-24">
-        <div className="lg:w-full px-20 lg:px-10">
+        <div className="lg:w-full px-10 lg:px-10">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
