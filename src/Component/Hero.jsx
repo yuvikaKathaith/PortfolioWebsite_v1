@@ -41,7 +41,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 2.0, duration: 2.0 }}
-            className="text-[#8892b0] mt-6 text-sm sm:w-4/5 lg:w-1/2 py-3"
+            className="text-[#8892b0] mt-6 text-sm md:text-md sm:w-4/5 lg:w-1/2 py-3"
           >
             I’m a pre-final year Electronics and Communication Engineering
             student, focused on building clean and user-friendly web experiences.

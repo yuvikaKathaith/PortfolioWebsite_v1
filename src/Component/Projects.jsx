@@ -36,7 +36,7 @@ const Projects = () => {
             transition={{ delay: 0.6, duration: 0.3 }}
             className="flex flex-col md:flex-row py-10 md:p-15 px-10 items-center md:items-start"
           >
-            <div className="w-[250px] md:w-[700px] h-[180px] md:h-[370px] relative z-10 group">
+            <div className="md:w-[700px] h-[180px] md:h-[370px] sm:w-[550px] sm:h-[250px] w-full relative z-10 group">
               <Link href="https://bingebuddy-react.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/project1.png"
@@ -134,7 +134,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-[250px] h-[180px] md:w-[700px]  md:h-[370px] relative z-10 group order-1 md:order-2">
+            <div className="w-full h-[180px] md:w-[700px] md:h-[370px] sm:w-[550px] sm:h-[250px] relative z-10 group order-1 md:order-2">
               <Link href="https://stampick.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image src="/project2.png" alt="project2" fill className="object-fill cursor-pointer rounded-sm" />
                 <div className="rounded-sm bg-[#64ffda]/40 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
@@ -150,7 +150,7 @@ const Projects = () => {
             transition={{ delay: 0.8, duration: 0.3 }}
             className="flex flex-col md:flex-row py-10 md:p-15 items-center px-10 md:items-start"
           >
-            <div className="w-[250px] h-[180px] md:w-[700px] md:h-[350px] relative z-10 group">
+            <div className="w-full h-[180px] md:w-[700px] md:h-[350px] sm:w-[550px] sm:h-[250px] relative z-10 group">
               <Link href="https://ems-seven-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image src="/project3.png" alt="project3" fill className="object-fill cursor-pointer rounded-sm" />
                 <div className="rounded-sm bg-[#64ffda]/20 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />

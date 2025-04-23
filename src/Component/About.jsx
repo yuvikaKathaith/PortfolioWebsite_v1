@@ -101,25 +101,25 @@ const About = () => {
 
         {/* Image Section */}
         <motion.div
-          className="w-full md:w-1/3 relative group mt-10 md:mt-0 flex justify-center"
+          className="w-full sm:w-[250px] md:w-1/3 relative group mt-10 md:mt-0 flex justify-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1.0, duration: 1.0 }}
         >
           {/* Frame Border */}
-          <div className="absolute top-4 left-15 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 z-10 md:w-[300px] md:h-[300px] w-[200px] h-[204px]" />
+          <div className="absolute top-4 sm:left-4 left-11 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1 sm:group-hover:translate-x-1 sm:group-hover:translate-y-1 md:group-hover:translate-x-1 md:group-hover:translate-y-1 lg:group-hover:translate-x-1 lg:group-hover:translate-y-1 z-10 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]" />
 
           {/* Image Container */}
-          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 md:w-[300px] md:h-[304px] w-[200px] h-[204px]">
+          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 sm:group-hover:-translate-x-1 sm:group-hover:-translate-y-1 md:group-hover:-translate-x-1 md:group-hover:translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]">
             <Image
               src="/me.png"
               alt="me"
               width={300}
               height={300}
-              className="object-cover rounded-md"
+              className="object-cover rounded-md w-full h-full"
             />
-            <div className="absolute inset-0 rounded-md bg-[#64ffda]/40 group-hover:bg-transparent transition duration-300 md:w-[300px] md:h-[304px] w-[200px] h-[204px]" />
+            <div className="absolute inset-0 rounded-md bg-[#64ffda]/40 group-hover:bg-transparent transition duration-300" />
           </div>
         </motion.div>
       </section>

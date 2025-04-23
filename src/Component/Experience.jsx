@@ -76,7 +76,7 @@ const Experience = () => {
                       <p className="text-sm md:text-md text-[#8892b0] font-mono">
                         {item.duration}
                       </p>
-                      <ul className="list-none space-y-2 text-[#8892b0] font-mono text-sm">
+                      <ul className="list-none space-y-2 text-[#8892b0] font-inter text-sm">
                         {item.points.map((point, id) => (
                           <li key={id}>
                             <span className="text-[#64ffda] mr-2">▹</span>
