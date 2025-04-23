@@ -47,7 +47,7 @@ const OtherProjects = () => {
       </motion.div>
 
       {/* outer div contains all cards */}
-      <motion.div className="grid grid-cols-3 gap-4 mx-auto">
+      <motion.div className="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto">
         {projectsToShow.map((project, index) => (
           <motion.div
             key={project?.id}

@@ -8,87 +8,90 @@ const Experience = () => {
   const [experience, setExperience] = useState("intern");
 
   return (
-    <Element name="experience">
-      <section className="py-20 px-6 sm:px-10 flex justify-center items-center flex-col">
-        <motion.div
-          className="flex flex-col sm:flex-row w-full max-w-4xl"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
-          {/* Header */}
-          <div className="flex items-center">
-            <h1 className="text-[#ccd6f6] text-2xl sm:text-[28px] font-semibold mr-0 sm:mr-4">
-              <span className="mr-2 font-normal font-mono text-xl sm:text-2xl text-[#64ffda]">
-                02.
-              </span>
-              Where I've Worked
-            </h1>
-          </div>
-          <div className="hidden sm:flex flex-grow border-t text-[#233554] mt-5" />
-        </motion.div>
+    <>
+      <Element name="experience">
+        <section className="py-30 px-25 md:px-10 flex justify-center items-center flex-col">
+          <motion.div
+            className="flex flex-col sm:flex-row w-full md:w-4/5 lg:w-3/5"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+          >
+            <div className="flex items-center mb-6 sm:mb-0">
+              <h1 className="text-[#ccd6f6] text-[24px] md:text-[27px] font-semibold mr-4">
+                <span className="mr-2 font-normal font-mono text-2xl md:text-2xl text-[#64ffda]">
+                  02.
+                </span>
+                Where I've Worked
+              </h1>
+            </div>
+            <div className="flex-grow border-t border-[#233554] mt-2 sm:mt-5" />
+          </motion.div>
 
-        {/* Content */}
-        <motion.div
-          className="gap-10 flex flex-col sm:flex-row w-full max-w-4xl pt-10 text-justify"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 1.0 }}
-        >
-          {/* Left Tabs */}
-          <div className="flex flex-row sm:flex-col overflow-x-auto sm:overflow-visible gap-2 sm:gap-0">
-            {experienceData.map((item) => (
-              <button
-                key={item.id}
-                className={`min-w-fit sm:w-48 h-10 border-l-2 text-start pl-4 py-1 transition-all duration-200 ${
-                  experience === item.id
-                    ? "bg-[#64ffda]/10 text-[#64ffda] border-[#64ffda]"
-                    : "hover:bg-[#64ffda]/5 hover:text-[#64ffda] text-[#8892b0] border-[#233554]"
-                }`}
-                onClick={() => {
-                  setExperience(item.id);
-                }}
-              >
-                {item.button}
-              </button>
-            ))}
-          </div>
-
-          {/* Right Content */}
-          {experienceData.map(
-            (item) =>
-              experience === item.id && (
-                <motion.div
+          {/* Content */}
+          <motion.div
+            className="flex flex-col md:flex-row gap-6 lg:gap-20 w-full md:w-4/5 lg:w-3/5 pt-10 text-justify"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 1.0 }}
+          >
+            {/* Slider (Tabs) */}
+            <div className="flex md:flex-col md:min-w-[200px] overflow-x-auto md:overflow-visible gap-2 md:gap-0 scrollbar-thin scrollbar-thumb-[#64ffda]/50 scrollbar-track-[#233554]/20 pb-2 md:pb-0">
+              {experienceData.map((item) => (
+                <button
                   key={item.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.8, duration: 1.0 }}
-                  className="flex flex-col gap-3 text-[#ccd6f6]"
+                  className={`flex-shrink-0 px-4 py-3 text-sm md:text-base border-l-2 text-start whitespace-nowrap ${
+                    experience === item.id
+                      ? "bg-[#64ffda]/10 text-[#64ffda] border-[#64ffda]"
+                      : "hover:bg-[#64ffda]/5 hover:text-[#64ffda] text-[#8892b0] border-[#233554]"
+                  }`}
+                  onClick={() => {
+                    setExperience(item.id);
+                  }}
                 >
-                  <h1 className="text-xl sm:text-2xl font-semibold">
-                    {item.title}{" "}
-                    <span className="text-[#64ffda]">{item.company}</span>
-                  </h1>
-                  <p className="text-sm sm:text-md text-[#8892b0] font-mono">
-                    {item.duration}
-                  </p>
-                  <ul className="list-none space-y-2 text-[#8892b0] font-mono text-sm sm:text-[15px]">
-                    {item.points.map((point, id) => (
-                      <li key={id}>
-                        <span className="text-[#64ffda] mr-2">▹</span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              )
-          )}
-        </motion.div>
-      </section>
-    </Element>
+                  {item.button}
+                </button>
+              ))}
+            </div>
+
+            {/* Right Side - Details */}
+            <div className="flex-grow">
+              {experienceData.map(
+                (item) =>
+                  experience === item.id && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.8, duration: 1.0 }}
+                      key={item.id}
+                      className="flex flex-col gap-3 text-[#ccd6f6]"
+                    >
+                      <h1 className="text-xl md:text-2xl font-semibold">
+                        {item.title}{" "}
+                        <span className="text-[#64ffda]">{item.company}</span>
+                      </h1>
+                      <p className="text-sm md:text-md text-[#8892b0] font-mono">
+                        {item.duration}
+                      </p>
+                      <ul className="list-none space-y-2 text-[#8892b0] font-mono text-sm">
+                        {item.points.map((point, id) => (
+                          <li key={id}>
+                            <span className="text-[#64ffda] mr-2">▹</span>
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )
+              )}
+            </div>
+          </motion.div>
+        </section>
+      </Element>
+    </>
   );
 };
 

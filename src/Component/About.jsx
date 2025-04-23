@@ -5,17 +5,17 @@ import { Element } from "react-scroll";
 const About = () => {
   return (
     <Element name="about">
-      <section className="gap-10 font-inter w-5xl mx-auto px-6 py-16 text-[16px] flex flex-col md:flex-row items-start justify-center-safe">
+      <section className="gap-10 font-inter w-5xl mx-auto px-25 py-10 lg:py-16 lg:px-6 text-[16px] flex flex-col md:flex-row items-start justify-center-safe">
         {/* Text */}
         <motion.div
-          className="w-3/5"
+          className="w-2/5 lg:w-3/5"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="flex items-center py-10">
-            <h2 className="text-[#ccd6f6] text-[28px] font-semibold mr-4">
+          <div className="flex items-center py-8">
+            <h2 className="text-[#ccd6f6] text-[24px] font-semibold mr-4">
               <span className="font-normal font-mono text-2xl text-[#64ffda]">
                 01.
               </span>{" "}
@@ -51,7 +51,7 @@ const About = () => {
           <p className="text-[#8892b0]">
             Here are a few technologies I’ve been working with recently:
           </p>
-          <ul className="text-[#8892b0] font-mono text-[14px] grid grid-cols-3 pt-5">
+          <ul className="text-[#8892b0] font-mono text-[14px] grid lg:grid-cols-3 grid-cols-2 pt-5">
             <li className="mb-2">
               <span className="text-[#64ffda]">▹</span> JavaScript (ES6+)
             </li>
@@ -83,7 +83,7 @@ const About = () => {
           <p className="text-[#8892b0] mt-6">
             I’ve also picked up a few other tools and skills along the way:
           </p>
-          <ul className="text-[#8892b0] font-mono text-[14px] grid grid-cols-3 pt-3">
+          <ul className="text-[#8892b0] font-mono text-[14px] grid lg:grid-cols-3 grid-cols-2 pt-5">
             <li className="mb-2">
               <span className="text-[#64ffda]">▹</span> Git & GitHub
             </li>
@@ -125,7 +125,7 @@ const About = () => {
 
         {/* Image Section */}
         <motion.div
-          className="w-1/3 relative group mt-30"
+          className="w-1/3 relative group md:mt-30"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -135,7 +135,7 @@ const About = () => {
           <div className="absolute inset-0 top-4 left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 z-10 w-[300px] h-[300px]" />
 
           {/* Image Container */}
-          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
+          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 ">
             <Image
               src="/me.png"
               alt="me"
@@ -144,7 +144,7 @@ const About = () => {
               className="object-cover rounded-md"
             />
             {/* Overlay on hover */}
-            <div className="absolute inset-0 rounded-md bg-[#64ffda]/40 group-hover:bg-transparent transition duration-300 h-[304px] w-[300px]" />
+            <div className="absolute inset-0 rounded-md bg-[#64ffda]/40 group-hover:bg-transparent transition duration-300 md:h-[304px] md:w-[300px]" />
           </div>
         </motion.div>
       </section>

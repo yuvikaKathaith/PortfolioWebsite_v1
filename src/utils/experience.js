@@ -1,7 +1,7 @@
 export const experienceData = [
     {
       id: "intern",
-      button: "Antenna Design Trainee, Summer",
+      button: "Antenna Design Trainee",
       title: "Antenna Design Intern",
       company: "@ BPIT",
       duration: "July - August 2024",
