@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <Element name="work">
-        <section className="py-10 sm:px-6 md:px-10 flex flex-col items-center">
+        <section className="py-10 sm:px-6 md:px-10 flex flex-col items-center lg:py-30">
           {/* Header */}
           <motion.div
             className="flex flex-col md:flex-row w-full px-10 md:w-3/5"
@@ -18,8 +18,8 @@ const Projects = () => {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <div className="flex items-center mb-4 md:mb-0">
-              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] font-semibold mr-0 md:mr-4">
-                <span className="mr-2 font-normal font-mono text-[18px] md:text-2xl text-[#64ffda]">
+              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-0 md:mr-4">
+                <span className="mr-2 font-normal font-mono text-[18px] lg:text-2xl md:text-2xl text-[#64ffda]">
                   03.
                 </span>
                 Some Things I’ve Built
@@ -34,9 +34,9 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.3 }}
-            className="flex flex-col md:flex-row py-10 md:p-15 px-10 items-center md:items-start"
+            className="flex flex-col md:flex-col lg:flex-row py-10 lg:p-15 px-10 items-center md:items-start"
           >
-            <div className="md:w-[700px] h-[180px] md:h-[370px] sm:w-[550px] sm:h-[250px] w-full relative z-10 group">
+            <div className="md:w-[700px] h-[180px] md:h-[370px] sm:w-[550px] [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] sm:h-[250px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] w-full relative z-10 group">
               <Link href="https://bingebuddy-react.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/project1.png"
@@ -47,14 +47,14 @@ const Projects = () => {
                 <div className="rounded-sm bg-[#64ffda]/40 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
               </Link>
             </div>
-            <div className="z-20 md:-ml-14 mt-6 md:mt-0">
+            <div className="z-20 lg:-ml-14 mt-6 lg:mt-0 md:items-center [@media(width:1024px)_and_(max-height:850px)]:-ml-80">
               <div className="text-right md:text-right p-3 -mr-0 md:-mr-3">
-                <p className="text-[#64ffda] text-[12px] font-mono">Featured Project</p>
+                <p className="text-[#64ffda] text-[12px] lg:text-[16px] font-mono">Featured Project</p>
                 <Link
                   href="https://bingebuddy-react.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[20px] md:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
+                  className="text-white text-[20px] md:text-[28px] lg:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
                 >
                   BingeBuddy
                 </Link>
@@ -68,7 +68,7 @@ const Projects = () => {
                 </p>
               </div>
               <div className="text-[#a8b2d1] font-mono">
-                <ul className="flex flex-wrap gap-4 text-[12px] justify-end pt-5">
+                <ul className="flex flex-wrap gap-4 text-[12px] lg:text-[14px] justify-end pt-5">
                   <li>React.js</li>
                   <li>Firebase</li>
                   <li>Redux Toolkit</li>
@@ -93,16 +93,16 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7, duration: 0.3 }}
-            className="flex flex-col md:flex-row py-10 px-10 md:p-15 items-center md:items-start"
+            className="flex flex-col md:flex-col lg:flex-row py-10 px-10 md:p-15 items-center md:items-start"
           >
-            <div className="z-20 md:-mr-18 mt-6 md:mt-0 order-2 md:order-1">
+            <div className="z-20 md:-mr-18 mt-6 md:mt-0 order-2 md:order-1 [@media(width:1024px)_and_(max-height:850px)]:-mr-100 [@media(width:1024px)_and_(max-height:850px)]:mt-30">
               <div className="text-left p-3 -ml-0 md:-ml-3">
-                <p className="text-[#64ffda] text-[12px] font-mono">Featured Project</p>
+                <p className="text-[#64ffda] text-[12px] font-mono lg:text-[16px]">Featured Project</p>
                 <Link
                   href="https://stampick.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[22px] md:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
+                  className="text-white text-[22px] lg:text-[28px] md:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
                 >
                   StamPick
                 </Link>
@@ -116,7 +116,7 @@ const Projects = () => {
                 </p>
               </div>
               <div className="text-[#a8b2d1] font-mono">
-                <ul className="flex flex-wrap gap-4 text-[12px] justify-start pt-5">
+                <ul className="flex flex-wrap gap-4 text-[12px] justify-start pt-5 lg:text-[14px]">
                   <li>Next.js</li>
                   <li>React.js</li>
                   <li>TypeScript</li>
@@ -134,7 +134,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full h-[180px] md:w-[700px] md:h-[370px] sm:w-[550px] sm:h-[250px] relative z-10 group order-1 md:order-2">
+            <div className="w-full h-[180px] md:w-[700px] md:h-[370px] sm:w-[550px] sm:h-[250px] relative z-10 group order-1 md:order-2 [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px]">
               <Link href="https://stampick.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image src="/project2.png" alt="project2" fill className="object-fill cursor-pointer rounded-sm" />
                 <div className="rounded-sm bg-[#64ffda]/40 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
@@ -148,27 +148,27 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.8, duration: 0.3 }}
-            className="flex flex-col md:flex-row py-10 md:p-15 items-center px-10 md:items-start"
+            className="flex flex-col md:flex-col lg:flex-row py-10 md:p-15 items-center px-10 md:items-start"
           >
-            <div className="w-full h-[180px] md:w-[700px] md:h-[350px] sm:w-[550px] sm:h-[250px] relative z-10 group">
+            <div className="w-full h-[180px] md:w-[700px] md:h-[350px] sm:w-[550px] sm:h-[250px] [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] relative z-10 group">
               <Link href="https://ems-seven-sepia.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image src="/project3.png" alt="project3" fill className="object-fill cursor-pointer rounded-sm" />
                 <div className="rounded-sm bg-[#64ffda]/20 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
               </Link>
             </div>
-            <div className="z-20 md:-ml-18 mt-6 md:mt-0">
+            <div className="z-20 md:-ml-18 mt-6 md:mt-0 [@media(width:1024px)_and_(max-height:850px)]:-ml-80 [@media(width:1024px)_and_(max-height:850px)]:mt-20">
               <div className="text-right p-3 -mr-0 md:-mr-3">
-                <p className="text-[#64ffda] md:text-sm text-[12px] font-mono">Featured Project</p>
+                <p className="text-[#64ffda] md:text-sm text-[12px] font-mono lg:text-[14px]">Featured Project</p>
                 <Link
                   href="https://ems-seven-sepia.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[22px] md:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
+                  className="text-white text-[22px] md:text-[28px] lg:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
                 >
                   EMS
                 </Link>
               </div>
-              <div className="w-full md:w-[500px] text-[#a8b2d1] bg-[#112240] p-4 md:p-6 text-right font-inter text-[12px] rounded-sm mt-3 md:text-[15px]">
+              <div className="w-full md:w-[500px]  text-[#a8b2d1] bg-[#112240] p-4 md:p-6 text-right font-inter text-[12px] rounded-sm mt-3 md:text-[15px]">
                 <p className="mb-4">
                   EMS is a compact Employee Management System that lets you manage tasks and track employee progress easily. It includes an Admin Dashboard where tasks can be created, assigned to team members, and monitored with status indicators like new, active, completed, or failed.
                 </p>

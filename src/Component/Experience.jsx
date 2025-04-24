@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <>
       <Element name="experience">
-        <section className="py-10 px-10 md:px-10 flex justify-center items-center flex-col">
+        <section className="py-10 px-10 lg:py-30 md:px-10 flex justify-center items-center flex-col">
           <motion.div
             className="flex flex-col sm:flex-row w-full md:w-4/5 lg:w-3/5"
             initial={{ opacity: 0, y: -20 }}
@@ -19,8 +19,8 @@ const Experience = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             <div className="flex items-center mb-6 sm:mb-0">
-              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] font-semibold mr-4">
-                <span className="mr-2 font-normal font-mono text-[18px] md:text-2xl text-[#64ffda]">
+              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-4">
+                <span className="mr-2 font-normal font-mono text-[18px] lg:text-2xl md:text-2xl text-[#64ffda]">
                   02.
                 </span>
                 Where I've Worked
@@ -31,7 +31,7 @@ const Experience = () => {
 
           {/* Content */}
           <motion.div
-            className="flex flex-col md:flex-row gap-6 lg:gap-20 w-full md:w-4/5 lg:w-3/5 pt-10 text-justify"
+            className="flex flex-col md:flex-row gap-6 md:gap-15 lg:gap-20 w-full md:w-4/5 lg:w-3/5 pt-10 md:text-left lg:text-left"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

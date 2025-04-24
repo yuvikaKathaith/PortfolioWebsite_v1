@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 
 const OtherProjects = () => {
   const router = useRouter();
-  
   const [showAllProjects, setShowAllProjects] = useState(false);
   const projectsToShow = showAllProjects
     ? projectsData
@@ -16,7 +15,7 @@ const OtherProjects = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Other project heading */}
+      {/* Heading */}
       <motion.div
         className="p-10 flex flex-col justify-center items-center gap-3"
         initial={{ opacity: 0, y: 20 }}
@@ -24,9 +23,7 @@ const OtherProjects = () => {
         transition={{ delay: 0.2, duration: 0.2 }}
         viewport={{ once: true }}
       >
-        <motion.h1
-          className="text-[#ccd6f6] text-[20px] md:text-2xl font-semibold font-inter"
-        >
+        <motion.h1 className="text-[#ccd6f6] text-[20px] md:text-2xl lg:text-3xl font-semibold font-inter">
           Other Noteworthy Projects
         </motion.h1>
         <motion.div
@@ -46,26 +43,27 @@ const OtherProjects = () => {
         </motion.div>
       </motion.div>
 
-      {/* outer div contains all cards */}
-      <motion.div className="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto md:p-0 p-10">
+      {/* Project Grid */}
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [@media(width:1024px)_and_(max-height:850px)]:grid-cols-2 gap-4 mx-auto md:p-0 p-10"
+      >
         {projectsToShow.map((project, index) => (
           <motion.div
             key={project?.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: showAllProjects? 0.1*index : 0.3 * index,
+              delay: showAllProjects ? 0.1 * index : 0.3 * index,
               duration: 0.5,
             }}
             viewport={{ once: true }}
             onClick={() => window.open(project?.live, "_blank")}
           >
             <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 md:max-w-[323px] md:h-[330px] cursor-pointer">
+              {/* Header */}
               <div className="flex items-center justify-between mb-5">
-                {/* folder icon */}
                 <Image src="/folder.svg" width={45} height={45} alt="folder" />
                 <div className="flex flex-row gap-3">
-                  {/* github */}
                   <Link
                     href={project?.github}
                     target="_blank"
@@ -73,12 +71,11 @@ const OtherProjects = () => {
                   >
                     <Image
                       src="/github-outline.svg"
-                      alt="externalLink"
+                      alt="github"
                       width={22}
                       height={22}
                     />
                   </Link>
-                  {/* external link icon */}
                   <Link
                     href={project?.live}
                     target="_blank"
@@ -86,7 +83,7 @@ const OtherProjects = () => {
                   >
                     <Image
                       src="/externalLink.svg"
-                      alt="externalLink"
+                      alt="live project"
                       width={22}
                       height={22}
                     />
@@ -107,7 +104,7 @@ const OtherProjects = () => {
               {/* Tech stack */}
               <ul className="flex flex-wrap gap-3 text-[13px] font-mono text-[#8892b0]">
                 {project.techs.map((tech, index) => (
-                  <li key={index}> {tech} </li>
+                  <li key={index}>{tech}</li>
                 ))}
               </ul>
             </div>
@@ -115,17 +112,16 @@ const OtherProjects = () => {
         ))}
       </motion.div>
 
+      {/* Show More/Less Button */}
       <div className="flex justify-center items-center p-10">
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          whileHover={{y:-2}}
+          whileHover={{ y: -2 }}
           className="w-33 h-13 bg-transparent border border-[#64ffda] text-[#64ffda] rounded-sm text-sm font-mono hover:bg-[#64ffda]/10"
-          onClick={() => {
-            setShowAllProjects(!showAllProjects);
-          }}
+          onClick={() => setShowAllProjects(!showAllProjects)}
         >
           {showAllProjects ? "Show Less" : "Show More"}
         </motion.button>
