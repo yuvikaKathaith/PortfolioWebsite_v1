@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import { ChevronUp } from "lucide-react";
 import { socialLinks } from "@/utils/socialLinks";
@@ -16,9 +16,12 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.5, duration: 0.5 }}
-      className="w-full py-6 px-4 flex flex-col items-center gap-4 md:hidden"
+      className="w-full py-6 px-4 flex flex-col gap-4 md:hidden items-center 
+        [@media(width:768px)_and_(height:1024px)]:flex 
+        [@media(width:768px)_and_(height:1024px)]:items-center 
+        [@media(width:768px)_and_(height:1024px)]:justify-center"
     >
-      {/* Social links - shown only on small screens */}
+      {/* Social links */}
       <div className="flex gap-6 mt-10 mb-5">
         {socialLinks.map((social) => (
           <Link key={social.id} href={social.url} target="_blank">
@@ -33,7 +36,7 @@ const Footer = () => {
         ))}
       </div>
 
-      {/* Scroll to top button */}
+      {/* Scroll to top */}
       <motion.button
         onClick={scrollToTop}
         transition={{ type: "spring", stiffness: 300 }}
@@ -43,8 +46,6 @@ const Footer = () => {
       >
         <ChevronUp size={24} />
       </motion.button>
-
-      
     </motion.footer>
   );
 };

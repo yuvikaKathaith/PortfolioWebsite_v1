@@ -101,7 +101,7 @@ const About = () => {
           <div className="absolute top-4 left-8 sm:left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1 z-10 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px] [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1" />
 
           {/* Image Container */}
-          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]">
+          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 [@media(width:768px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]">
             <Image
               src="/me.png"
               alt="me"
