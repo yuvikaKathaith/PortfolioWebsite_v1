@@ -11,7 +11,7 @@ const Projects = () => {
         <section className="py-10 sm:px-6 md:px-10 flex flex-col items-center lg:py-30">
           {/* Header */}
           <motion.div
-            className="flex flex-col md:flex-row w-full px-10 md:w-3/5"
+            className="flex flex-row md:flex-row w-full px-10 md:w-3/5"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -25,7 +25,7 @@ const Projects = () => {
                 Some Things I’ve Built
               </h1>
             </div>
-            <div className="flex-grow border-t text-[#233554] mt-2 md:mt-5" />
+            <div className="flex-grow border-t text-[#233554] mt-4 ml-3 md:mt-5" />
           </motion.div>
 
           {/* First project */}

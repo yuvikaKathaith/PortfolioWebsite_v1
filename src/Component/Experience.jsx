@@ -12,13 +12,13 @@ const Experience = () => {
       <Element name="experience">
         <section className="py-10 px-10 lg:py-30 md:px-10 flex justify-center items-center flex-col">
           <motion.div
-            className="flex flex-col sm:flex-row w-full md:w-4/5 lg:w-3/5"
+            className="flex flex-row sm:flex-row w-full md:w-4/5 lg:w-3/5"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <div className="flex items-center mb-6 sm:mb-0">
+            <div className="flex items-center sm:mb-0">
               <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-4">
                 <span className="mr-2 font-normal font-mono text-[18px] lg:text-2xl md:text-2xl text-[#64ffda]">
                   02.
@@ -26,7 +26,7 @@ const Experience = () => {
                 Where I've Worked
               </h1>
             </div>
-            <div className="flex-grow border-t border-[#233554] mt-2 sm:mt-5" />
+            <div className="flex-grow border-t border-[#233554] mt-4 sm:mt-5" />
           </motion.div>
 
           {/* Content */}

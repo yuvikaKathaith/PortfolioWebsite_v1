@@ -21,7 +21,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1.0, duration: 1.0 }}
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#ccd6f6] mt-2 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#ccd6f6] mt-2 leading-tight"
           >
             Yuvika Kathaith.
           </motion.h1>
@@ -31,7 +31,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1.5, duration: 1.5 }}
-            className="text-2xl sm:text-4xl lg:text-7xl md:text-5xl font-bold text-[#8892b0] mt-2 leading-tight"
+            className="text-4xl sm:text-4xl lg:text-7xl md:text-5xl font-bold text-[#8892b0] mt-2 leading-tight"
           >
             I build things for the web.
           </motion.h2>
@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ delay: 2.3, duration: 1.5 }}
           >
             <Link to="about" smooth={true} duration={500}>
-              <span className="text-sm font-semibold lg:text-lg text-[#64ffda] inline-flex relative cursor-pointer h-7 group overflow-x-hidden mt-4">
+              <span className="text-md font-semibold lg:text-lg text-[#64ffda] inline-flex relative cursor-pointer h-7 group overflow-x-hidden mt-4">
                 Learn more.
                 <span className="absolute w-full h-[1px] bg-[#64ffda] left-0 bottom-0 translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300"></span>
               </span>

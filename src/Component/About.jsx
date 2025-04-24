@@ -24,7 +24,7 @@ const About = () => {
             <div className="flex-grow border-t border-[#233554]" />
           </div>
 
-          <p className="text-[#8892b0] mb-4 text-[13px] md:text-base">
+          <p className="text-[#8892b0] mb-4 text-[14px] md:text-base">
             Hey! I'm Yuvika, an Electronics and Communication Engineering
             undergrad who enjoys creating things that live on the internet.
             I’m a{" "}
@@ -36,16 +36,16 @@ const About = () => {
             <span className="text-[#64ffda] font-semibold">DSA</span>.
             In my free time, you'll find me reading or drawing.
           </p>
-          <p className="text-[#8892b0] mb-4 text-[13px] md:text-base">
+          <p className="text-[#8892b0] mb-4 text-[14px] md:text-base">
             I’m currently looking for a full-time role or internship to grow and
             contribute to a dynamic team.
           </p>
 
-          <p className="text-[#8892b0] text-[13px] md:text-base">
+          <p className="text-[#8892b0] text-[14px] md:text-base">
             Technologies I work with:
           </p>
 
-          <ul className="text-[#8892b0] font-mono text-[12px] grid lg:grid-cols-3 grid-cols-2 pt-5 lg:text-[14px]">
+          <ul className="text-[#8892b0] font-mono text-[14px] grid lg:grid-cols-3 grid-cols-2 pt-5 lg:text-[14px]">
             {[
               "JavaScript (ES6+)",
               "TypeScript",
@@ -67,7 +67,7 @@ const About = () => {
             Other tools and skills:
           </p>
 
-          <ul className="text-[#8892b0] font-mono text-[12px] grid lg:grid-cols-3 grid-cols-2 pt-5 lg:text-[14px]">
+          <ul className="text-[#8892b0] font-mono text-[14px] grid lg:grid-cols-3 grid-cols-2 pt-5 lg:text-[14px]">
             {[
               "Git & GitHub",
               "Postman",
@@ -91,17 +91,17 @@ const About = () => {
 
         {/* Image Section */}
         <motion.div
-          className="w-full max-w-[300px] relative group mt-10 md:mt-0 flex justify-center [@media(width:600px)_and_(max-height:1024px)]:mx-auto"
+          className="w-full max-w-[300px] relative group mt-10 md:mt-0 flex justify-center [@media(width:600px)_and_(max-height:1024px)]:mx-auto mx-auto"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1.0, duration: 1.0 }}
         >
           {/* Frame Border */}
-          <div className="absolute top-4 left-8 sm:left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 z-10 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px] [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1" />
+          <div className="absolute top-4 left-8 sm:left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1 z-10 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px] [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1" />
 
           {/* Image Container */}
-          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]">
+          <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px]">
             <Image
               src="/me.png"
               alt="me"
