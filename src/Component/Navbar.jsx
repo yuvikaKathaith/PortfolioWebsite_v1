@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -12,10 +12,8 @@ const Navbar = () => {
 
   const handleLogoClick = () => {
     if (pathname === "/") {
-      // Try to scroll to top
       scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      // Not on homepage → go to homepage
       router.push("/");
     }
   };
@@ -91,7 +89,10 @@ const Navbar = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.3 }}
             >
-              <a href="https://drive.google.com/file/d/12kzSWBdNIbXQnXJVOV1kOlTCW60dQ5WY/view?usp=drive_link" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/12kzSWBdNIbXQnXJVOV1kOlTCW60dQ5WY/view?usp=drive_link"
+                target="_blank"
+              >
                 <button className="transition-transform hover:-translate-y-1 duration-300 border w-20 h-10 rounded-sm text-[#64ffda] -mt-5 hover:bg-[#64ffda]/10">
                   Resume
                 </button>
@@ -103,45 +104,56 @@ const Navbar = () => {
         {/* Mobile Hamburger Menu */}
         <div className="md:hidden flex items-center p-4">
           {isOpen ? (
-            <X onClick={toggleMenu} className="text-[#64ffda] w-7 h-7 cursor-pointer" />
+            <X
+              onClick={toggleMenu}
+              className="text-[#64ffda] w-7 h-7 cursor-pointer"
+            />
           ) : (
-            <Menu onClick={toggleMenu} className="text-[#64ffda] w-7 h-7 cursor-pointer" />
+            <Menu
+              onClick={toggleMenu}
+              className="text-[#64ffda] w-7 h-7 cursor-pointer"
+            />
           )}
         </div>
       </nav>
 
-      {/* Mobile Menu (when the hamburger is clicked) */}
+      {/* Mobile Popup Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 py-6 bg-[#0a192f] text-[#ccd6f6] text-sm">
-          <Link to="about" smooth duration={500} onClick={toggleMenu}>
-            <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
-              <span className="text-[#64ffda]">01.</span> About
-            </span>
-          </Link>
+        <div className="fixed top-0 left-0 w-full h-full bg-black/60 z-40 flex items-center justify-center">
+          <div className="bg-[#0a192f] text-[#ccd6f6] text-sm rounded-md shadow-lg w-[80%] max-w-xs p-6 flex flex-col items-center gap-6 animate-fade-in">
+            <Link to="about" smooth duration={500} onClick={toggleMenu}>
+              <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
+                <span className="text-[#64ffda]">01.</span> About
+              </span>
+            </Link>
 
-          <Link to="experience" smooth duration={500} onClick={toggleMenu}>
-            <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
-              <span className="text-[#64ffda]">02.</span> Experience
-            </span>
-          </Link>
+            <Link to="experience" smooth duration={500} onClick={toggleMenu}>
+              <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
+                <span className="text-[#64ffda]">02.</span> Experience
+              </span>
+            </Link>
 
-          <Link to="work" smooth duration={500} onClick={toggleMenu}>
-            <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
-              <span className="text-[#64ffda]">03.</span> Work
-            </span>
-          </Link>
+            <Link to="work" smooth duration={500} onClick={toggleMenu}>
+              <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
+                <span className="text-[#64ffda]">03.</span> Work
+              </span>
+            </Link>
 
-          <Link to="contact" smooth duration={500} onClick={toggleMenu}>
-            <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
-              <span className="text-[#64ffda]">04.</span> Contact
-            </span>
-          </Link>
+            <Link to="contact" smooth duration={500} onClick={toggleMenu}>
+              <span className="flex gap-1 hover:text-[#64ffda] cursor-pointer">
+                <span className="text-[#64ffda]">04.</span> Contact
+              </span>
+            </Link>
 
-          <a href="https://drive.google.com/file/d/12kzSWBdNIbXQnXJVOV1kOlTCW60dQ5WY/view?usp=drive_link" target="_blank">
-            <button className="border w-24 h-10 rounded-sm text-[#64ffda] hover:bg-[#64ffda]/10 transition-transform hover:-translate-y-1 duration-300">
-              Resume
-            </button>
-          </a>
+            <a
+              href="https://drive.google.com/file/d/12kzSWBdNIbXQnXJVOV1kOlTCW60dQ5WY/view?usp=drive_link"
+              target="_blank"
+            >
+              <button className="border w-24 h-10 rounded-sm text-[#64ffda] hover:bg-[#64ffda]/10 transition-transform hover:-translate-y-1 duration-300">
+                Resume
+              </button>
+            </a>
+          </div>
         </div>
       )}
     </>
