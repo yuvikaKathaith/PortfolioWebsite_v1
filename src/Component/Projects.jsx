@@ -15,7 +15,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
           >
             <div className="flex items-center mb-4 md:mb-0">
               <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-0 md:mr-4">
@@ -33,7 +33,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.6, duration: 0.3 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
             className="flex flex-col md:flex-col lg:flex-row py-10 lg:p-15 px-10 items-center md:items-start"
           >
             <div className="md:w-[700px] h-[180px] md:h-[370px] sm:w-[550px] [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] sm:h-[250px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] w-full relative z-10 group [@media(width:768px)_and_(max-height:1024px)]:w-[600px]">
@@ -92,7 +92,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.7, duration: 0.3 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
             className="flex flex-col md:flex-col lg:flex-row py-10 px-10 md:p-15 items-center md:items-start [@media(width:768px)_and_(max-height:1024px)]:mb-40"
           >
             <div className="z-20 md:-mr-18 mt-6 md:mt-0 order-2 md:order-1 [@media(width:1024px)_and_(max-height:850px)]:-mr-100 [@media(width:1024px)_and_(max-height:850px)]:mt-30 [@media(width:768px)_and_(max-height:1024px)]:mb-7 [@media(width:768px)_and_(max-height:1024px)]:mr-20">
@@ -147,7 +147,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.8, duration: 0.3 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
             className="flex flex-col md:flex-col lg:flex-row py-10 md:p-15 items-center px-10 md:items-start"
           >
             <div className="w-full h-[180px] md:w-[700px] md:h-[350px] sm:w-[550px] sm:h-[250px] [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] relative z-10 group [@media(width:768px)_and_(max-height:1024px)]:w-[600px]">

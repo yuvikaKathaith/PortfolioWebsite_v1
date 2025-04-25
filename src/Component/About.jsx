@@ -12,7 +12,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.3 }}
         >
           <div className="flex items-center py-8">
             <h2 className="text-[#ccd6f6] text-[20px] lg:text-3xl md:text-[24px] font-semibold mr-4">
@@ -95,7 +95,7 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 1.0, duration: 1.0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
         >
           {/* Frame Border */}
           <div className="absolute top-4 left-8 sm:left-4 rounded-md border-2 border-[#64ffda] transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1 z-10 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px] [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1 lg:group-hover:translate-x-1 lg:group-hover:translate-y-1 [@media(width:768px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:768px)_and_(max-height:1024px)]:group-hover:translate-y-1" />

@@ -10,7 +10,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 1.0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
         >
           <h3 className="font-mono text-[#64ffda] text-[16px] md:text-[18px]">
             04. What's Next?
