@@ -53,7 +53,7 @@ const OtherProjects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: showAllProjects ? 0.1 * index : 0.3 * index,
+              delay: showAllProjects ? 0.1 * index : 0.2 * index,
               duration: 0.5,
             }}
             viewport={{ once: true }}

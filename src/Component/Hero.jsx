@@ -20,7 +20,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 1.0, duration: 1.0 }}
+            transition={{ delay: 0.7, duration: 1.0 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-[#ccd6f6] mt-2 leading-tight"
           >
             Yuvika Kathaith.
@@ -30,7 +30,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 1.5, duration: 1.5 }}
+            transition={{ delay: 1.0, duration: 1.5 }}
             className="text-4xl sm:text-4xl lg:text-[68px] md:text-5xl font-bold text-[#8892b0] mt-2 leading-tight"
           >
             I build things for the web.
@@ -40,7 +40,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 2.0, duration: 2.0 }}
+            transition={{ delay: 1.4, duration: 2.0 }}
             className="text-[#8892b0] mt-6 text-[15px] lg:text-[17px] md:text-base max-w-2xl leading-relaxed"
           >
             I’m a pre-final year Electronics and Communication Engineering student,
@@ -52,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 2.3, duration: 1.5 }}
+            transition={{ delay: 1.6, duration: 1.5 }}
           >
             <Link to="about" smooth={true} duration={500}>
               <span className="text-md font-semibold lg:text-lg text-[#64ffda] inline-flex relative cursor-pointer h-7 group overflow-x-hidden mt-4">
@@ -68,7 +68,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.5, duration: 1.5 }}
+                transition={{ delay: 1.9, duration: 1.5 }}
                 className="text-sm md:text-base border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded-sm hover:bg-[#64ffda22] transition-transform hover:-translate-y-1 duration-300 font-mono"
               >
                 Get In Touch
