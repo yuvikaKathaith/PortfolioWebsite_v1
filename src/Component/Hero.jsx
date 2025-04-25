@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center px-6 [@media(width:600px)_and_(max-height:1024px)]:px-10 [@media(width:1024px)_and_(max-height:850px)]:px-35 md:px-10 bg-[#0a192f] text-white">
+    <section className="flex items-center justify-center px-6 [@media(width:600px)_and_(max-height:1024px)]:px-10 [@media(width:1024px)_and_(max-height:850px)]:px-35 md:px-10 bg-[#0a192f] text-white [@media(width:768px)_and_(max-height:1024px)]:px-20">
       <div className="flex flex-col lg:flex-row items-start justify-start max-w-6xl w-full mx-auto py-24">
         <div className="w-full lg:px-10">
           <motion.p

@@ -45,7 +45,7 @@ const OtherProjects = () => {
 
       {/* Project Grid */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [@media(width:1024px)_and_(max-height:850px)]:grid-cols-2 gap-4 mx-auto md:p-0 p-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [@media(width:1024px)_and_(max-height:850px)]:grid-cols-2 gap-4 mx-auto md:p-0 p-10 [@media(width:768px)_and_(max-height:1024px)]:group-hover:translate-x-1 [@media(width:768px)_and_(max-height:1024px)]:grid-cols-2"
       >
         {projectsToShow.map((project, index) => (
           <motion.div
@@ -59,7 +59,7 @@ const OtherProjects = () => {
             viewport={{ once: true }}
             onClick={() => window.open(project?.live, "_blank")}
           >
-            <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 md:max-w-[323px] md:h-[330px] cursor-pointer">
+            <div className="bg-[#112240] rounded-sm p-7 flex flex-col text-[#ccd6f6] hover:-translate-y-2 transition-transform duration-300 md:max-w-[323px] md:h-[330px] cursor-pointer [@media(width:768px)_and_(max-height:1024px)]:w-[280px] [@media(width:768px)_and_(max-height:1024px)]:h-[400px]">
               {/* Header */}
               <div className="flex items-center justify-between mb-5">
                 <Image src="/folder.svg" width={45} height={45} alt="folder" />

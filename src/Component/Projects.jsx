@@ -47,7 +47,7 @@ const Projects = () => {
                 <div className="rounded-sm bg-[#64ffda]/40 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
               </Link>
             </div>
-            <div className="z-20 lg:-ml-14 mt-6 lg:mt-0 md:items-center [@media(width:1024px)_and_(max-height:850px)]:-ml-80 [@media(width:768px)_and_(max-height:1024px)]:ml-30 [@media(width:768px)_and_(max-height:1024px)]:-mt-50">
+            <div className="z-20 lg:-ml-14 mt-6 lg:mt-0 md:items-center [@media(width:1024px)_and_(max-height:850px)]:-ml-80 [@media(width:768px)_and_(max-height:1024px)]:ml-20 [@media(width:768px)_and_(max-height:1024px)]:-mt-50">
               <div className="text-right md:text-right p-3 -mr-0 md:-mr-3">
                 <p className="text-[#64ffda] text-[12px] lg:text-[16px] font-mono">Featured Project</p>
                 <Link
@@ -93,9 +93,9 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7, duration: 0.3 }}
-            className="flex flex-col md:flex-col lg:flex-row py-10 px-10 md:p-15 items-center md:items-start"
+            className="flex flex-col md:flex-col lg:flex-row py-10 px-10 md:p-15 items-center md:items-start [@media(width:768px)_and_(max-height:1024px)]:mb-40"
           >
-            <div className="z-20 md:-mr-18 mt-6 md:mt-0 order-2 md:order-1 [@media(width:1024px)_and_(max-height:850px)]:-mr-100 [@media(width:1024px)_and_(max-height:850px)]:mt-30 [@media(width:768px)_and_(max-height:1024px)]:ml-20 [@media(width:768px)_and_(max-height:1024px)]:mb-7 [@media(width:768px)_and_(max-height:1024px)]:mr-20">
+            <div className="z-20 md:-mr-18 mt-6 md:mt-0 order-2 md:order-1 [@media(width:1024px)_and_(max-height:850px)]:-mr-100 [@media(width:1024px)_and_(max-height:850px)]:mt-30 [@media(width:768px)_and_(max-height:1024px)]:mb-7 [@media(width:768px)_and_(max-height:1024px)]:mr-20">
               <div className="text-left p-3 -ml-0 md:-ml-3">
                 <p className="text-[#64ffda] text-[12px] font-mono lg:text-[16px]">Featured Project</p>
                 <Link
@@ -107,7 +107,7 @@ const Projects = () => {
                   StamPick
                 </Link>
               </div>
-              <div className="w-full md:w-[600px] text-[#a8b2d1] bg-[#112240] p-4 md:p-6 text-left font-inter md:text-[15px] text-[12px] rounded-sm mt-3">
+              <div className="w-full md:w-[600px] text-[#a8b2d1] bg-[#112240] p-4 md:p-6 text-left font-inter md:text-[15px] text-[12px] rounded-sm mt-3 [@media(width:768px)_and_(max-height:1024px)]:w-[450px]">
                 <p className="mb-4">
                   StamPick is a digital platform that connects stamp collectors across India, making it easier to buy, sell, and explore rare stamps from anywhere. It features an AI-powered stamp scanner that instantly identifies stamps and provides details like history, rarity, and estimated value.
                 </p>
@@ -134,7 +134,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full h-[180px] md:w-[700px] md:h-[370px] sm:w-[550px] sm:h-[250px] relative z-10 group order-1 md:order-2 [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] [@media(width:768px)_and_(max-height:1024px)]:w-[600px] [@media(width:768px)_and_(max-height:1024px)]:ml-20">
+            <div className="w-full h-[180px] md:w-[700px] md:h-[370px] sm:w-[550px] sm:h-[250px] relative z-10 group order-1 md:order-2 [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] [@media(width:768px)_and_(max-height:1024px)]:w-[500px] [@media(width:768px)_and_(max-height:1024px)]:h-[300px] [@media(width:768px)_and_(max-height:1024px)]:ml-35 [@media(width:768px)_and_(max-height:1024px)]:-mt-120">
               <Link href="https://stampick.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Image src="/project2.png" alt="project2" fill className="object-fill cursor-pointer rounded-sm" />
                 <div className="rounded-sm bg-[#64ffda]/40 w-full h-full absolute z-1 group-hover:bg-transparent transition duration-100" />
