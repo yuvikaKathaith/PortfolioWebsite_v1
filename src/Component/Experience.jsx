@@ -16,7 +16,7 @@ const Experience = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
           >
             <div className="flex items-center sm:mb-0">
               <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-4">
@@ -65,7 +65,7 @@ const Experience = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ delay: 0.8, duration: 1.0 }}
+                      transition={{ delay: 0.5, duration: 0.5 }}
                       key={item.id}
                       className="flex flex-col gap-3 text-[#ccd6f6]"
                     >

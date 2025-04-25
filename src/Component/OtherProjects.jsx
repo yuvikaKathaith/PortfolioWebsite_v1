@@ -54,7 +54,7 @@ const OtherProjects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               delay: showAllProjects ? 0.1 * index : 0.2 * index,
-              duration: 0.5,
+              duration: 0.3,
             }}
             viewport={{ once: true }}
             onClick={() => window.open(project?.live, "_blank")}
