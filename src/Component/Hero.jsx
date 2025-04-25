@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center px-6 [@media(width:600px)_and_(max-height:1024px)]:px-10 [@media(width:1024px)_and_(max-height:850px)]:px-35 md:px-10 bg-[#0a192f] text-white [@media(width:768px)_and_(max-height:1024px)]:px-20">
+    <section className="flex items-center justify-center px-6 [@media(width:600px)_and_(max-height:1024px)]:px-10 [@media(width:1024px)_and_(max-height:850px)]:px-35 md:px-10 bg-[#0a192f] text-white [@media(width:768px)_and_(max-height:1024px)]:px-20 lg:px-60">
       <div className="flex flex-col lg:flex-row items-start justify-start max-w-6xl w-full mx-auto py-24">
         <div className="w-full lg:px-10">
           <motion.p
@@ -21,7 +21,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1.0, duration: 1.0 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#ccd6f6] mt-2 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-[#ccd6f6] mt-2 leading-tight"
           >
             Yuvika Kathaith.
           </motion.h1>
@@ -31,7 +31,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1.5, duration: 1.5 }}
-            className="text-4xl sm:text-4xl lg:text-7xl md:text-5xl font-bold text-[#8892b0] mt-2 leading-tight"
+            className="text-4xl sm:text-4xl lg:text-[68px] md:text-5xl font-bold text-[#8892b0] mt-2 leading-tight"
           >
             I build things for the web.
           </motion.h2>
