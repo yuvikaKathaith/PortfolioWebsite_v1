@@ -54,4 +54,5 @@ npm run dev
 | Green            | ![#64ffda](https://via.placeholder.com/15/64ffda/000000?text=+) `#64ffda`  |
 
 ## Acknowledgements
-* [https://brittanychiang.com/](https://v4.brittanychiang.com/) - Design Inspiration
+Personal Portfolio built using Next.js. Inspired from Brittany Chiang's portfolio design.
+* [https://brittanychiang.com/](https://brittanychiang.com/) - Design Inspiration
