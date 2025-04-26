@@ -36,6 +36,10 @@ const Footer = () => {
         ))}
       </div>
 
+      <div className='flex items-center'>
+        <p>Design Inspiration @Brittany Chiang</p>
+      </div>
+
       {/* Scroll to top */}
       <motion.button
         onClick={scrollToTop}
