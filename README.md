@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="/logo-blue-bg.png" width="100" />
+  <img alt="Logo" src="/public/logo-blue-bg.png" width="100" />
 </div>
 <h1 align="center">
   Portfolio Website Version 1
