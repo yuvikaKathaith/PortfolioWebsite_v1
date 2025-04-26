@@ -22,8 +22,8 @@ npm run dev
 
 ## 🎨 Color Reference
 
-| Color          | Hex Code             |
-| -------------- | --------------------- |
+| Color          | Hex Code                                                                  |
+| -------------- | ------------------------------------------------------------------------- |
 | Navy           | ![#0a192f](https://via.placeholder.com/15/0a192f/000000?text=+) `#0a192f` |
 | Light Navy     | ![#112240](https://via.placeholder.com/15/112240/000000?text=+) `#112240` |
 | Lightest Navy  | ![#233554](https://via.placeholder.com/15/233554/000000?text=+) `#233554` |
