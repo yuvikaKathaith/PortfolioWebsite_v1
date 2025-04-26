@@ -2,12 +2,13 @@
   <img alt="Logo" src="/public/logo-blue-bg.png" width="100" />
 </div>
 <h1 align="center">
-  Portfolio Website Version 1
+  Portfolio Website v1
 </h1>
 <p align="center">
   The first iteration of <a href="https://yuvikakathaith.vercel.app/" target="_blank">yuvikakathaith.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
 </p>
 
+![demo](/public/demo.png)
 
 ## 🎨 Color Reference
 
@@ -21,3 +22,6 @@
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+
+
+
