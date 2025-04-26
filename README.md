@@ -11,15 +11,6 @@
 ![demo](/public/demo.png)
 
 
-## 📂 Clone This Repo
-
-```bash
-git clone https://github.com/yuvikaKathaith/PortfolioWebsite_v1.git
-cd PortfolioWebsite_v1
-npm install
-npm run dev
-```
-
 ## 🎨 Color Reference
 
 | Color          | Hex Code                                                                  |
