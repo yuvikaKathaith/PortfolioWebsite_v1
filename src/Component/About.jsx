@@ -42,7 +42,7 @@ const About = () => {
           </p>
 
           <p className="text-[#8892b0] text-[14px] md:text-base">
-            Technologies I work with:
+            Here are a few technologies I’ve been working with recently:
           </p>
 
           <ul className="text-[#8892b0] font-mono text-[14px] grid lg:grid-cols-3 grid-cols-2 pt-5 lg:text-[14px]">
