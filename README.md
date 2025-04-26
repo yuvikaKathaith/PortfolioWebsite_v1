@@ -11,15 +11,45 @@
 ![demo](/public/demo.png)
 
 
+## 🛠️ Built With
+* Next.js
+* JavaScript
+* TailwindCSS
+* Framer Motion – For animations
+* React Icons / Font Awesome – For icons
+
+## 🚀 Installation & Set Up
+
+1. Clone this repository
+```bash
+git clone https://github.com/yuvikaKathaith/PortfolioWebsite_v1.git
+```
+
+2. Navigate to the project directory
+```bash
+cd PortfolioWebsite_v1
+```
+
+3. Install dependencies
+```bash
+npm install
+```
+
+4. Start the development server
+```bash
+npm run dev
+```
+
 ## 🎨 Color Reference
 
-| Color          | Hex Code                                                                  |
-| -------------- | ------------------------------------------------------------------------- |
-| Navy           | ![#0a192f](https://via.placeholder.com/15/0a192f/000000?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/15/112240/000000?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/15/233554/000000?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/15/8892b0/000000?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/15/a8b2d1/000000?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/15/ccd6f6/000000?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/15/e6f1ff/000000?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/15/64ffda/000000?text=+) `#64ffda` |
+| Color            | Hex Code                                                                  |
+| ---------------- | ------------------------------------------------------------------------- |
+| Navy             | ![#0a192f](https://via.placeholder.com/15/0a192f/000000?text=+) `#0a192f`  |
+| Light Navy       | ![#112240](https://via.placeholder.com/15/112240/000000?text=+) `#112240`  |
+| Lightest Navy    | ![#233554](https://via.placeholder.com/15/233554/000000?text=+) `#233554`  |
+| Slate            | ![#8892b0](https://via.placeholder.com/15/8892b0/000000?text=+) `#8892b0`  |
+| Light Slate      | ![#a8b2d1](https://via.placeholder.com/15/a8b2d1/000000?text=+) `#a8b2d1`  |
+| Lightest Slate   | ![#ccd6f6](https://via.placeholder.com/15/ccd6f6/000000?text=+) `#ccd6f6`  |
+| White            | ![#e6f1ff](https://via.placeholder.com/15/e6f1ff/000000?text=+) `#e6f1ff`  |
+| Green            | ![#64ffda](https://via.placeholder.com/15/64ffda/000000?text=+) `#64ffda`  |
+
