@@ -53,3 +53,5 @@ npm run dev
 | White            | ![#e6f1ff](https://via.placeholder.com/15/e6f1ff/000000?text=+) `#e6f1ff`  |
 | Green            | ![#64ffda](https://via.placeholder.com/15/64ffda/000000?text=+) `#64ffda`  |
 
+## Acknowledgements
+* https://brittanychiang.com/ - Design Inspiration
