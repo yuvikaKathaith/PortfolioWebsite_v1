@@ -18,7 +18,7 @@
 * Framer Motion – For animations
 * React Icons / Font Awesome – For icons
 
-## 🚀 Installation & Set Up
+## Installation & Set Up
 
 1. Clone this repository
 ```bash
