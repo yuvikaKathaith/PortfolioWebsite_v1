@@ -2,7 +2,7 @@
   <img alt="Logo" src="/public/logo-blue-bg.png" width="100" />
 </div>
 <h1 align="center">
-  Portfolio Website v1
+  Portfolio Website
 </h1>
 <p align="center">
   The first iteration of <a href="https://yuvikakathaith.vercel.app/" target="_blank">Yuvika Kathaith's</a> portfolio built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
