@@ -11,8 +11,7 @@ export const experienceData = [
       "Conducted simulation-based performance comparisons to improve directivity and signal efficiency.",
       "Gained hands-on experience in RF engineering and wireless communication system design.",
     ],
-    certificateUrl: [
-    ],
+    certificateUrl: [],
   },
   {
     id: "jc",
@@ -27,8 +26,14 @@ export const experienceData = [
       "Strengthened problem-solving abilities by participating in event organization and IT-related troubleshooting.",
     ],
     certificateUrl: [
-      { name: "HackBPIT", url: "https://drive.google.com/file/d/1BFlY8sBVKRrP6aIiL4478BZQSnbuonqI/view?usp=drive_link" },
-      { name: "Junior Council", url: "https://link-to-cert.com/juniorcouncil" },
+      {
+        name: "HackBPIT",
+        url: "https://drive.google.com/file/d/1Sp-6h3ndUkinm4k8ojLT38OK-38UcwkM/view?usp=sharing",
+      },
+      {
+        name: "Junior Council",
+        url: "https://drive.google.com/file/d/1eHtyTjeofIUZ8yQAiIOxBFPho9D1t0lS/view?usp=sharing",
+      },
     ],
   },
 ];
