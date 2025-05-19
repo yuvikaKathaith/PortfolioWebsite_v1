@@ -103,7 +103,7 @@ const About = () => {
           {/* Image Container */}
           <div className="relative z-20 rounded-md transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 w-[200px] h-[204px] sm:w-[250px] sm:h-[254px] md:w-[300px] md:h-[304px] lg:group-hover:-translate-x-1 lg:group-hover:-translate-y-1 [@media(width:768px)_and_(max-height:1024px)]:group-hover:-translate-x-1 [@media(width:600px)_and_(max-height:1024px)]:group-hover:-translate-y-1">
             <Image
-              src="/me.png"
+              src="/me2.jpg"
               alt="me"
               width={300}
               height={300}

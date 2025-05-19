@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { experienceData } from "@/utils/experience.js";
 import { Element } from "react-scroll";
+import Link from "next/link"
 
 const Experience = () => {
   const [experience, setExperience] = useState("intern");
@@ -84,6 +85,28 @@ const Experience = () => {
                           </li>
                         ))}
                       </ul>
+                      {item.certificateUrl &&
+                        item.certificateUrl.length > 0 && (
+                          <div className="mt-4 space-y-1">
+                            <h3 className="text-[#ccd6f6] text-md font-semibold">
+                              Certificates:
+                            </h3>
+                            <ul className="pl-5 list-none text-[#64ffda] text-md">
+                              {item.certificateUrl.map((cert, idx) => (
+                                <li key={idx}>
+                                  <Link
+                                    href={cert.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#52e0c4]"
+                                  >
+                                    ▹ {cert.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                     </motion.div>
                   )
               )}
