@@ -126,9 +126,9 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="flex justify-start pt-5 gap-5">
-                <Link href="#" aria-disabled="true">
+                <span className="opacity-50 cursor-not-allowed">
                   <Image src="/github-outline.svg" alt="github" width={22} height={22} />
-                </Link>
+                </span>
                 <Link href="https://stampick.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <Image src="/externalLink.svg" alt="live" width={22} height={22} />
                 </Link>
