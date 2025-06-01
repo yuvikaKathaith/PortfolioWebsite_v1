@@ -126,7 +126,7 @@ const Projects = () => {
                 </ul>
               </div>
               <div className="flex justify-start pt-5 gap-5">
-                <Link href="#">
+                <Link href="#" aria-disabled="true">
                   <Image src="/github-outline.svg" alt="github" width={22} height={22} />
                 </Link>
                 <Link href="https://stampick.vercel.app/" target="_blank" rel="noopener noreferrer">
