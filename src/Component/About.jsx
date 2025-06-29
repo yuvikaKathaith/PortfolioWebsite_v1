@@ -24,7 +24,7 @@ const About = () => {
             <div className="flex-grow border-t border-[#233554]" />
           </div>
 
-          <p className="text-[#8892b0] mb-4 text-[14px] md:text-base">
+          <p className="text-[#8892b0] mb-4 text-[13px] md:text-[15px]">
             Hey! I'm Yuvika, an Electronics and Communication Engineering
             undergrad who enjoys creating things that live on the internet.
             I’m a{" "}
@@ -36,12 +36,12 @@ const About = () => {
             <span className="text-[#64ffda] font-semibold">DSA</span>.
             In my free time, you'll find me reading or drawing.
           </p>
-          <p className="text-[#8892b0] mb-4 text-[14px] md:text-base">
+          <p className="text-[#8892b0] mb-4 text-[14px] md:text-[15px]">
             I’m currently looking for a full-time role or internship to grow and
             contribute to a dynamic team.
           </p>
 
-          <p className="text-[#8892b0] text-[14px] md:text-base">
+          <p className="text-[#8892b0] text-[14px] md:text-[15px]">
             Here are a few technologies I’ve been working with recently:
           </p>
 
