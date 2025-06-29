@@ -23,7 +23,7 @@ const OtherProjects = () => {
         transition={{ delay: 0.2, duration: 0.2 }}
         viewport={{ once: true }}
       >
-        <motion.h1 className="text-[#ccd6f6] text-[20px] md:text-2xl lg:text-3xl font-semibold font-inter">
+        <motion.h1 className="text-[#ccd6f6] text-[20px] md:text-2xl lg:text-3xl font-semibold font-mono">
           Other Noteworthy Projects
         </motion.h1>
         <motion.div

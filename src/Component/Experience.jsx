@@ -6,8 +6,7 @@ import { Element } from "react-scroll";
 import Link from "next/link"
 
 const Experience = () => {
-  const [experience, setExperience] = useState("intern");
-
+  const [experience, setExperience] = useState("imdIntern");
   return (
     <>
       <Element name="experience">
@@ -20,7 +19,7 @@ const Experience = () => {
             transition={{ delay: 0.3, duration: 0.3 }}
           >
             <div className="flex items-center sm:mb-0">
-              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-4">
+              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-4 font-mono">
                 <span className="mr-2 font-normal font-mono text-[18px] lg:text-2xl md:text-2xl text-[#64ffda]">
                   02.
                 </span>
@@ -32,20 +31,21 @@ const Experience = () => {
 
           {/* Content */}
           <motion.div
-            className="flex flex-col md:flex-row gap-6 md:gap-15 lg:gap-20 w-full md:w-4/5 lg:w-3/5 pt-10 md:text-left lg:text-left"
+            className="flex flex-col md:flex-row gap-6 md:gap-20 lg:gap-20 w-full md:w-4/5 lg:w-3/5 pt-10 md:text-left lg:text-left"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1.0 }}
           >
             {/* Slider (Tabs) */}
-            <div className="flex md:flex-col md:min-w-[200px] overflow-x-auto md:overflow-visible gap-2 md:gap-0 scrollbar-thin scrollbar-thumb-[#64ffda]/50 scrollbar-track-[#233554]/20 pb-2 md:pb-0">
+            <div className="flex md:flex-col md:w-auto overflow-x-auto md:overflow-visible gap-2 md:gap-0 scrollbar-thin scrollbar-thumb-[#64ffda]/50 scrollbar-track-[#233554]/20 pb-2 md:pb-0 font-mono">
               {experienceData.map((item) => (
                 <button
                   key={item.id}
-                  className={`flex-shrink-0 px-4 py-3 text-sm md:text-base border-l-2 text-start whitespace-nowrap ${
+                  className={`text-sm  w-2/3 flex-shrink-0 px-4 py-3 md:text-[14px] border-l-2 text-start whitespace-nowrap min-w-full 
+                  ${
                     experience === item.id
-                      ? "bg-[#64ffda]/10 text-[#64ffda] border-[#64ffda]"
+                      ? "bg-[#64ffda]/10 text-[#64ffda] border-[#64ffda] border-l-3"
                       : "hover:bg-[#64ffda]/5 hover:text-[#64ffda] text-[#8892b0] border-[#233554]"
                   }`}
                   onClick={() => {
@@ -77,10 +77,10 @@ const Experience = () => {
                       <p className="text-sm md:text-md text-[#8892b0] font-mono">
                         {item.duration}
                       </p>
-                      <ul className="list-none space-y-2 text-[#8892b0] font-inter text-sm">
+                      <ul className="list-none space-y-2 text-[#8892b0] font-inter text-[15px]">
                         {item.points.map((point, id) => (
                           <li key={id}>
-                            <span className="text-[#64ffda] mr-2">▹</span>
+                            <span className="text-[#64ffda] mr-2 text-lg">▹</span>
                             {point}
                           </li>
                         ))}

@@ -18,7 +18,7 @@ const Projects = () => {
             transition={{ delay: 0.3, duration: 0.3 }}
           >
             <div className="flex items-center mb-4 md:mb-0">
-              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold mr-0 md:mr-4">
+              <h1 className="text-[#ccd6f6] text-[20px] md:text-[27px] lg:text-3xl font-semibold font-mono mr-0 md:mr-4">
                 <span className="mr-2 font-normal font-mono text-[18px] lg:text-2xl md:text-2xl text-[#64ffda]">
                   03.
                 </span>

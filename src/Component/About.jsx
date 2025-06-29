@@ -15,7 +15,7 @@ const About = () => {
           transition={{ delay: 0.3, duration: 0.3 }}
         >
           <div className="flex items-center py-8">
-            <h2 className="text-[#ccd6f6] text-[20px] lg:text-3xl md:text-[24px] font-semibold mr-4">
+            <h2 className="text-[#ccd6f6] text-[20px] lg:text-3xl md:text-[24px] font-semibold mr-4 font-mono">
               <span className="font-normal font-mono text-lg lg:text-2xl md:text-2xl text-[#64ffda]">
                 01.
               </span>{" "}

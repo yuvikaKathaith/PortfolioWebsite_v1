@@ -1,6 +1,20 @@
 export const experienceData = [
   {
-    id: "intern",
+    id: "imdIntern",
+    button: "India Meteorological Department",
+    title: "ML-IoT Intern",
+    company: "@ India Meteorological Department, Ministry of Earth and Sciences",
+    duration: "June 2025 - Present",
+    points: [
+      "Worked on automating temperature readings from Stevenson Screens using image processing and IoT.",
+      "Captured real-time thermometer images and extracted temperature using OpenCV and Python.",
+      "Digitized and transmitted data through IoT-enabled devices for integration into meteorological systems.",
+      "Validated accuracy by comparing automated readings with manual logs to ensure reliability.",
+    ],
+    certificateUrl: [],
+  },
+  {
+    id: "researchIntern",
     button: "Antenna Design Trainee",
     title: "Antenna Design Intern",
     company: "@ BPIT",
