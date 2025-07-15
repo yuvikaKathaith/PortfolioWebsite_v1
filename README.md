@@ -42,16 +42,17 @@ npm run dev
 
 ## 🎨 Color Reference
 
-| Color            | Swatch                                                              | Hex Code     |
-| ---------------- | ------------------------------------------------------------------- | ------------ |
-| Navy             | ![#0a192f](https://via.placeholder.com/20/0a192f/0a192f)             | `#0a192f`    |
-| Light Navy       | ![#112240](https://via.placeholder.com/20/112240/112240)             | `#112240`    |
-| Lightest Navy    | ![#233554](https://via.placeholder.com/20/233554/233554)             | `#233554`    |
-| Slate            | ![#8892b0](https://via.placeholder.com/20/8892b0/8892b0)             | `#8892b0`    |
-| Light Slate      | ![#a8b2d1](https://via.placeholder.com/20/a8b2d1/a8b2d1)             | `#a8b2d1`    |
-| Lightest Slate   | ![#ccd6f6](https://via.placeholder.com/20/ccd6f6/ccd6f6)             | `#ccd6f6`    |
-| White            | ![#e6f1ff](https://via.placeholder.com/20/e6f1ff/e6f1ff)             | `#e6f1ff`    |
-| Green            | ![#64ffda](https://via.placeholder.com/20/64ffda/64ffda)             | `#64ffda`    |
+| Color            | Swatch                                                                 | Hex Code     |
+| ---------------- | ---------------------------------------------------------------------- | ------------ |
+| Navy             | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%230a192f'/%3E%3C/svg%3E"> | `#0a192f` |
+| Light Navy       | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23112240'/%3E%3C/svg%3E"> | `#112240` |
+| Lightest Navy    | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23233554'/%3E%3C/svg%3E"> | `#233554` |
+| Slate            | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%238892b0'/%3E%3C/svg%3E"> | `#8892b0` |
+| Light Slate      | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23a8b2d1'/%3E%3C/svg%3E"> | `#a8b2d1` |
+| Lightest Slate   | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23ccd6f6'/%3E%3C/svg%3E"> | `#ccd6f6` |
+| White            | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23e6f1ff'/%3E%3C/svg%3E"> | `#e6f1ff` |
+| Green            | <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect width='20' height='20' fill='%2364ffda'/%3E%3C/svg%3E"> | `#64ffda` |
+
 
 
 
