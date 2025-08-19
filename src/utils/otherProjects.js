@@ -1,5 +1,15 @@
 export const projectsData = [
   {
+    id: 0,
+    title: "AI-powered Resume Analyzer",
+    description:
+      "An AI-powered Resume Analyzer built with React and Puter.js. Includes seamless authentication, resume upload & storage, and smart AI evaluations to match candidates to jobs. Designed with a clean, reusable UI for smooth user experience.",
+    github: "https://github.com/yuvikaKathaith/AI-Resume-Analyzer", // replace with your repo link
+    live: "https://ai-resume-analyzer.vercel.app/", // replace with your live link
+    techs: ["React", "Puter.js", "AI", "Tailwind"],
+    year: 2025,
+  },
+  {
     id: 1,
     title: "Advanced Pokémon Explorer",
     description:
