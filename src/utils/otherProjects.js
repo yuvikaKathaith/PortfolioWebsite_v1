@@ -4,8 +4,8 @@ export const projectsData = [
     title: "AI-powered Resume Analyzer",
     description:
       "An AI-powered Resume Analyzer built with React and Puter.js. Includes seamless authentication, resume upload & storage, and smart AI evaluations to match candidates to jobs. Designed with a clean, reusable UI for smooth user experience.",
-    github: "https://github.com/yuvikaKathaith/AI-Resume-Analyzer", // replace with your repo link
-    live: "",
+    github: "https://github.com/yuvikaKathaith/Resumind", 
+    live: "https://resumind-dusky.vercel.app/",
     techs: ["React", "Puter.js", "AI", "Tailwind"],
     year: 2025,
   },

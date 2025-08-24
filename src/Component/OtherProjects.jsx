@@ -68,6 +68,7 @@ const OtherProjects = () => {
                     href={project?.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                     onClick={(e) => e.stopPropagation()}
                   >
                     <Image
                       src="/github-outline.svg"
@@ -80,6 +81,7 @@ const OtherProjects = () => {
                     href={project?.live}
                     target="_blank"
                     rel="noopener noreferrer"
+                     onClick={(e) => e.stopPropagation()}
                   >
                     <Image
                       src="/externalLink.svg"
