@@ -90,7 +90,7 @@ const Navbar = () => {
               transition={{ delay: 0.55, duration: 0.3 }}
             >
               <a
-                href="https://drive.google.com/file/d/1wu9a5rEQanLjNbcAN9d48lhaaymrsQyD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_-iAzR0eiMZkRPRV_v89BO4hu-MzmiYK/view?usp=sharing"
                 target="_blank"
               >
                 <button className="transition-transform hover:-translate-y-1 duration-300 border w-20 h-10 rounded-sm text-[#64ffda] -mt-5 hover:bg-[#64ffda]/10">
