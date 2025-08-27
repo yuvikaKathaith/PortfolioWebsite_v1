@@ -3,7 +3,8 @@ export const experienceData = [
     id: "imdIntern",
     button: "India Meteorological Department",
     title: "ML-IoT Intern",
-    company: "@ India Meteorological Department, Ministry of Earth and Sciences",
+    company:
+      "@ India Meteorological Department, Ministry of Earth and Sciences",
     duration: "June - July 2025",
     points: [
       "Worked on automating temperature readings from Stevenson Screens using image processing and IoT.",
@@ -13,6 +14,26 @@ export const experienceData = [
     ],
     certificateUrl: [],
   },
+  {
+    id: "nabengIntern",
+    button: "Nabeng Techno Solutions Pvt. Ltd.",
+    title: "MERN Developer Intern",
+    company: "@ Nabeng Techno Solutions Pvt. Ltd.",
+    duration: "June - July 2025",
+    points: [
+      "Contributed to the development of a Library Management System using the MERN stack (MongoDB, Express.js, React.js, and Node.js).",
+      "Applied strong technical acumen and problem-solving skills to implement features and improve system performance.",
+      "Demonstrated a proactive learning mindset and dedication to producing high-quality work.",
+      "Collaborated effectively with the team in delivering project milestones within deadlines.",
+    ],
+    certificateUrl: [
+      {
+        name: "Certificate of Completion",
+        url: "https://drive.google.com/file/d/1g6ASuo4DIR61MbsPXtg4bByUZwXv0ESv/view?usp=sharing", 
+      },
+    ],
+  },
+
   {
     id: "researchIntern",
     button: "Antenna Design Trainee",
