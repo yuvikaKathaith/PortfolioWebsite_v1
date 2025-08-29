@@ -12,7 +12,12 @@ export const experienceData = [
       "Digitized and transmitted data through IoT-enabled devices for integration into meteorological systems.",
       "Validated accuracy by comparing automated readings with manual logs to ensure reliability.",
     ],
-    certificateUrl: [],
+    certificateUrl: [
+      {
+        name: "Certificate of Completion",
+        url: "https://drive.google.com/file/d/1LhdDVcWyDmzkhOH6zQ3SWiOWnGRkLXd6/view?usp=sharing", 
+      },
+    ],
   },
   {
     id: "nabengIntern",
