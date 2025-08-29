@@ -4,7 +4,7 @@ export const experienceData = [
     button: "India Meteorological Department",
     title: "ML-IoT Intern",
     company:
-      "@ India Meteorological Department, Ministry of Earth and Sciences",
+      "@ India Meteorological Department, Ministry of Earth and Sciences, Govt. of India",
     duration: "June - July 2025",
     points: [
       "Worked on automating temperature readings from Stevenson Screens using image processing and IoT.",
