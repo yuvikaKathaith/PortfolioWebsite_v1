@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: "imdIntern",
     button: "India Meteorological Department",
-    title: "ML-IoT Intern",
+    title: "Summer Intern",
     company:
       "@ India Meteorological Department, Ministry of Earth Sciences, Govt. of India",
     duration: "June - July 2025",
