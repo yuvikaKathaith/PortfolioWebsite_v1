@@ -17,4 +17,10 @@ export const socialLinks = [
     url: "https://codepen.io/Yuvika-Kathaith",
     icon: '/codepen.svg',
   },
+  {
+    id: 4,
+    name: "Pinterest",
+    url: "https://in.pinterest.com/madSounds__/",
+    icon: '/pinterest.svg',
+  },
 ];
