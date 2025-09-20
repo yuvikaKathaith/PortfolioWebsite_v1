@@ -6,7 +6,7 @@ export const projectsData = [
       "An AI-powered Resume Analyzer built with React and Puter.js. Includes seamless authentication, resume upload & storage, and smart AI evaluations to match candidates to jobs. Designed with a clean, reusable UI for smooth user experience.",
     github: "https://github.com/yuvikaKathaith/Resumind", 
     live: "https://resumind-dusky.vercel.app/",
-    techs: ["React", "Puter.js", "AI", "Tailwind"],
+    techs: ["React", "Puter.js", "Tailwind", "Clerk"],
     year: 2025,
   },
   {
@@ -21,6 +21,16 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: "Stampick",
+    description:
+      "A digital platform for stamp collectors in India, offering AI-powered stamp scanning, history and value insights, 3D virtual exhibitions, educational resources, and secure transactions to make buying, selling, and exploring stamps easy and authentic.",
+    github: "",
+    live: "https://stampick.vercel.app/",
+    techs: ["Next.js", "GSAP", "Tailwind CSS"],
+    year: 2024,
+  },
+  {
+    id: 3,
     title: "MERN Restaurant",
     description:
       "A restaurant web app built using the MERN. This project showcases the use of MongoDB, Express, React, and Node.js to create a dynamic restaurant website. It allows users to interact with the backend to make reservations.",
@@ -30,7 +40,7 @@ export const projectsData = [
     year: 2024,
   },
   {
-    id: 3,
+    id: 4,
     title: "AI Image Generator",
     description:
       "Utilizing React and the OpenAI API, this project is an AI-powered image generator that creates images based on text prompts. A fun way to explore the capabilities of AI image generation.",
@@ -40,7 +50,7 @@ export const projectsData = [
     year: 2024,
   },
   {
-    id: 4,
+    id: 5,
     title: "Gemini Clone",
     description:
       "A clone of the Google Gemini AI chatbot powered by the Google Gemini API, built using React. Users can interact with the AI model, receiving responses in a conversational style.",
@@ -50,7 +60,7 @@ export const projectsData = [
     year: 2024,
   },
   {
-    id: 5,
+    id: 6,
     title: "Search Engine",
     description:
       "A simple search engine built using HTML, CSS, and JavaScript. It mimics a basic search interface where you can input queries and see results displayed dynamically.",
@@ -60,7 +70,7 @@ export const projectsData = [
     year: 2023,
   },
   {
-    id: 6,
+    id: 7,
     title: "Page Animation",
     description:
       "A webpage animation project demonstrating the use of GSAP for creating smooth animations that enhance user experience when navigating the page.",
@@ -70,7 +80,7 @@ export const projectsData = [
     year: 2024,
   },
   {
-    id: 7,
+    id: 8,
     title: "Currency Converter",
     description:
       "A simple currency converter built using JS. This app allows users to convert one currency to another using real-time exchange rates fetched from the Exchangerate-API. It was a great project to practice working with APIs and handling dynamic data.",
@@ -80,7 +90,7 @@ export const projectsData = [
     year: 2023,
   },
   {
-    id: 8,
+    id: 9,
     title: "Weather App",
     description:
       "This was my first time using API integration, and I found it really enjoyable. The project fetches live weather data from an API and displays it in a simple, user-friendly interface. Now, I love working on projects where I get to use APIs!",
@@ -90,7 +100,7 @@ export const projectsData = [
     year: 2023,
   },
   {
-    id: 9,
+    id: 10,
     title: "Ecommerce Cart",
     description:
       "A fully functional e-commerce cart showcasing dynamic product additions, real-time cart updates, and smooth interactions for a seamless online shopping experience.",
@@ -100,7 +110,7 @@ export const projectsData = [
     year: 2023,
   },
   {
-    id: 10,
+    id: 11,
     title: "Movie Seat Booking App",
     description:
       "A seat booking system where users can select their seats and make bookings for movies. This project is built with pure JavaScript, offering real-time seat availability and booking.",
@@ -110,7 +120,7 @@ export const projectsData = [
     year: 2022,
   },
   {
-    id: 11,
+    id: 12,
     title: "Simon Game",
     description:
       "This was the very first project that sparked my interest in web development. Inspired by the Simon game I played as a kid, I recreated it using HTML, CSS, and JavaScript by following tutorials. It was tough but super rewarding!",
