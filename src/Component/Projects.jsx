@@ -38,7 +38,7 @@ const Projects = () => {
           >
             <div className="lg:w-[650px] lg:h-[320px] h-[180px] md:h-[370px] sm:w-[550px] [@media(width:1024px)_and_(max-height:850px)]:w-[600px] [@media(width:1024px)_and_(max-height:850px)]:h-[300px] sm:h-[250px] [@media(width:600px)_and_(max-height:1024px)]:h-[250px] w-full relative z-10 group [@media(width:768px)_and_(max-height:1024px)]:w-[600px]">
               <Link
-                href="https://soliloquyy.vercel.app/"
+                href="https://soliloquyy.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ const Projects = () => {
                   Featured Project
                 </p>
                 <Link
-                  href="https://soliloquyy.vercel.app/"
+                  href="https://soliloquyy.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-[20px] md:text-[28px] lg:text-[28px] font-semibold font-inter hover:text-[#64ffda] cursor-pointer"
@@ -103,7 +103,7 @@ const Projects = () => {
                   />
                 </Link>
                 <Link
-                  href="https://soliloquyy.vercel.app/"
+                  href="https://soliloquyy.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
